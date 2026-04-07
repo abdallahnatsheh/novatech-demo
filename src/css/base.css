@@ -14,15 +14,19 @@
 
 html {
   font-size: 100%;
-  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
 }
 
 body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
   line-height: var(--line-height-normal);
-  color: var(--color-secondary-800);
-  background-color: var(--color-secondary-50);
+  color: var(--text-body);
+  background-color: var(--bg-body);
+  transition: background-color var(--transition-base), color var(--transition-base);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -31,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
-  color: var(--color-secondary-900);
+  color: var(--text-heading);
 }
 
 h1 { font-size: var(--font-size-4xl); }
@@ -106,7 +110,7 @@ button {
 
 .skip-link {
   position: absolute;
-  top: -100%;
+  top: -9999px;
   left: var(--spacing-4);
   padding: var(--spacing-2) var(--spacing-4);
   background: var(--color-primary-600);
@@ -138,4 +142,11 @@ section {
   h1 { font-size: var(--font-size-3xl); }
   h2 { font-size: var(--font-size-2xl); }
   h3 { font-size: var(--font-size-xl); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

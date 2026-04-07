@@ -31,13 +31,14 @@
           <li class="nav__item"><a href="/pages/contact.html" class="nav__link">Contact</a></li>
         </ul>
       </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">&#9790; Dark</button>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="page-hero">
+    <section class="page-hero" aria-labelledby="page-hero-title">
       <div class="page-hero__container">
-        <h1 class="page-hero__title">Our Services</h1>
+        <h1 id="page-hero-title" class="page-hero__title">Our Services</h1>
         <p class="page-hero__subtitle">Comprehensive technology solutions tailored to your business needs</p>
       </div>
     </section>
@@ -195,5 +196,6 @@
   </footer>
 
   <script type="module" src="/js/navigation.js"></script>
+  <script type="module" src="/js/theme.js"></script>
 </body>
 </html>

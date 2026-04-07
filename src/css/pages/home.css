@@ -51,7 +51,7 @@
 
 /* Features Section */
 .features {
-  background: white;
+  background: var(--bg-surface);
 }
 
 .features__container {
@@ -75,7 +75,7 @@
   text-align: center;
   padding: var(--spacing-8);
   border-radius: var(--radius-lg);
-  background: var(--color-secondary-50);
+  background: var(--bg-body);
   transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
 
