@@ -6,7 +6,7 @@
    Header
    =================== */
 .header {
-  background: white;
+  background: var(--bg-surface);
   box-shadow: var(--shadow-sm);
   position: sticky;
   top: 0;
@@ -103,7 +103,7 @@
     left: 0;
     right: 0;
     flex-direction: column;
-    background: white;
+    background: var(--bg-surface);
     padding: var(--spacing-4);
     gap: 0;
     box-shadow: var(--shadow-md);
@@ -256,7 +256,7 @@
    CTA Section
    =================== */
 .cta {
-  background: var(--color-secondary-100);
+  background: var(--bg-body);
   text-align: center;
 }
 
@@ -345,4 +345,22 @@
 .form-status--error {
   background: var(--color-error-100);
   color: var(--color-error-700);
+}
+
+/* ===================
+   Dark Mode Toggle
+   =================== */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  padding: var(--spacing-1) var(--spacing-3);
+  font-size: var(--font-size-sm);
+  color: var(--text-body);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.theme-toggle:hover {
+  background: var(--bg-body);
 }

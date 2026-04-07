@@ -15,7 +15,7 @@
 /* Contact Info */
 .contact__info {
   padding: var(--spacing-8);
-  background: var(--color-secondary-50);
+  background: var(--bg-body);
   border-radius: var(--radius-lg);
 }
 
@@ -60,7 +60,7 @@
 
 /* Contact Form */
 .contact-form {
-  background: white;
+  background: var(--bg-surface);
   padding: var(--spacing-8);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);

@@ -16,7 +16,7 @@
 
 /* Team Card */
 .team-card {
-  background: white;
+  background: var(--bg-surface);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   padding: var(--spacing-8);
@@ -64,7 +64,7 @@
 
 /* Values Section */
 .values {
-  background: white;
+  background: var(--bg-surface);
 }
 
 .values__container {
