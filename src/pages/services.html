@@ -44,58 +44,126 @@
 
     <section class="services" aria-labelledby="services-heading">
       <h2 id="services-heading" class="visually-hidden">Available Services</h2>
-      <div class="services__container">
-        <article class="service">
-          <div class="service__content">
-            <h3 class="service__title">Custom Software Development</h3>
-            <p class="service__description">We build tailored software solutions that address your unique business challenges. From web applications to enterprise systems, our team delivers high-quality, maintainable code.</p>
-            <ul class="service__features">
-              <li>Full-stack web development</li>
-              <li>Mobile app development</li>
-              <li>API design and integration</li>
-              <li>Legacy system modernization</li>
-            </ul>
-          </div>
+      <div class="services__grid">
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">&#128187;</div>
+          <h3 class="service-card__title">Custom Software Development</h3>
+          <p class="service-card__description">We build tailored software solutions that address your unique business challenges. From web applications to enterprise systems, our team delivers high-quality, maintainable code.</p>
+          <ul class="service-card__features">
+            <li>Full-stack web development</li>
+            <li>Mobile app development</li>
+            <li>API design and integration</li>
+            <li>Legacy system modernization</li>
+          </ul>
         </article>
 
-        <article class="service">
-          <div class="service__content">
-            <h3 class="service__title">Cloud Solutions</h3>
-            <p class="service__description">Leverage the power of cloud computing to improve scalability, reduce costs, and enhance reliability. We help you migrate, optimize, and manage cloud infrastructure.</p>
-            <ul class="service__features">
-              <li>Cloud migration strategy</li>
-              <li>AWS, Azure, and GCP expertise</li>
-              <li>Infrastructure as Code</li>
-              <li>Cost optimization</li>
-            </ul>
-          </div>
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">&#9729;</div>
+          <h3 class="service-card__title">Cloud Solutions</h3>
+          <p class="service-card__description">Leverage the power of cloud computing to improve scalability, reduce costs, and enhance reliability. We help you migrate, optimize, and manage cloud infrastructure.</p>
+          <ul class="service-card__features">
+            <li>Cloud migration strategy</li>
+            <li>AWS, Azure, and GCP expertise</li>
+            <li>Infrastructure as Code</li>
+            <li>Cost optimization</li>
+          </ul>
         </article>
 
-        <article class="service">
-          <div class="service__content">
-            <h3 class="service__title">Technology Consulting</h3>
-            <p class="service__description">Strategic guidance to align your technology investments with business objectives. We help you make informed decisions about architecture, tools, and processes.</p>
-            <ul class="service__features">
-              <li>Technology roadmap planning</li>
-              <li>Architecture review</li>
-              <li>Team augmentation</li>
-              <li>Process improvement</li>
-            </ul>
-          </div>
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">&#128200;</div>
+          <h3 class="service-card__title">Technology Consulting</h3>
+          <p class="service-card__description">Strategic guidance to align your technology investments with business objectives. We help you make informed decisions about architecture, tools, and processes.</p>
+          <ul class="service-card__features">
+            <li>Technology roadmap planning</li>
+            <li>Architecture review</li>
+            <li>Team augmentation</li>
+            <li>Process improvement</li>
+          </ul>
         </article>
 
-        <article class="service">
-          <div class="service__content">
-            <h3 class="service__title">Data & Analytics</h3>
-            <p class="service__description">Transform your data into actionable insights. We design and implement data pipelines, warehouses, and visualization tools to support data-driven decision making.</p>
-            <ul class="service__features">
-              <li>Data pipeline development</li>
-              <li>Business intelligence dashboards</li>
-              <li>Machine learning solutions</li>
-              <li>Data governance</li>
-            </ul>
-          </div>
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">&#128202;</div>
+          <h3 class="service-card__title">Data &amp; Analytics</h3>
+          <p class="service-card__description">Transform your data into actionable insights. We design and implement data pipelines, warehouses, and visualization tools to support data-driven decision making.</p>
+          <ul class="service-card__features">
+            <li>Data pipeline development</li>
+            <li>Business intelligence dashboards</li>
+            <li>Machine learning solutions</li>
+            <li>Data governance</li>
+          </ul>
         </article>
+      </div>
+    </section>
+
+    <section class="pricing" aria-labelledby="pricing-heading">
+      <div class="pricing__container">
+        <h2 id="pricing-heading" class="pricing__heading">Simple, Transparent Pricing</h2>
+        <p class="pricing__subheading">Choose the plan that fits your needs. All plans include dedicated support.</p>
+        <div class="pricing__grid">
+          <article class="pricing-card" aria-label="Starter plan">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Starter</h3>
+              <p class="pricing-card__tagline">For small teams getting started</p>
+            </div>
+            <div class="pricing-card__price">
+              <span class="pricing-card__currency">$</span>
+              <span class="pricing-card__amount">2,500</span>
+              <span class="pricing-card__period">/month</span>
+            </div>
+            <ul class="pricing-card__features" aria-label="Starter features">
+              <li>Up to 3 projects</li>
+              <li>20 hours of consulting</li>
+              <li>Email support</li>
+              <li>Basic analytics dashboard</li>
+              <li>Monthly progress reports</li>
+            </ul>
+            <a href="/pages/contact.html" class="btn btn--outline pricing-card__cta">Get Started</a>
+          </article>
+
+          <article class="pricing-card pricing-card--featured" aria-label="Professional plan, most popular">
+            <div class="pricing-card__badge">Most Popular</div>
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Professional</h3>
+              <p class="pricing-card__tagline">For growing businesses</p>
+            </div>
+            <div class="pricing-card__price">
+              <span class="pricing-card__currency">$</span>
+              <span class="pricing-card__amount">7,500</span>
+              <span class="pricing-card__period">/month</span>
+            </div>
+            <ul class="pricing-card__features" aria-label="Professional features">
+              <li>Up to 10 projects</li>
+              <li>60 hours of consulting</li>
+              <li>Priority phone &amp; email support</li>
+              <li>Advanced analytics &amp; reporting</li>
+              <li>Weekly progress reviews</li>
+              <li>Cloud infrastructure management</li>
+              <li>Dedicated account manager</li>
+            </ul>
+            <a href="/pages/contact.html" class="btn btn--primary pricing-card__cta">Get Started</a>
+          </article>
+
+          <article class="pricing-card" aria-label="Enterprise plan">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Enterprise</h3>
+              <p class="pricing-card__tagline">For large-scale operations</p>
+            </div>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">Custom</span>
+            </div>
+            <ul class="pricing-card__features" aria-label="Enterprise features">
+              <li>Unlimited projects</li>
+              <li>Unlimited consulting hours</li>
+              <li>24/7 dedicated support</li>
+              <li>Custom analytics solutions</li>
+              <li>Daily stand-ups available</li>
+              <li>Full infrastructure management</li>
+              <li>SLA guarantees</li>
+              <li>On-site engagements</li>
+            </ul>
+            <a href="/pages/contact.html" class="btn btn--outline pricing-card__cta">Contact Sales</a>
+          </article>
+        </div>
       </div>
     </section>
 
