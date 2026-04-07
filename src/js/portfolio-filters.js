@@ -29,6 +29,10 @@ function filterProjects(category) {
       project.classList.add(CLASSES.hidden);
     }
   });
+
+  const visible = document.querySelectorAll('.project-card:not(.is-hidden)').length;
+  const statusEl = document.getElementById('filter-status');
+  if (statusEl) statusEl.textContent = `Showing ${visible} project${visible !== 1 ? 's' : ''}`;
 }
 
 /**

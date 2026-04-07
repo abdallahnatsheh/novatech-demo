@@ -3,7 +3,10 @@ const STORAGE_KEY = 'nt-theme';
 function applyTheme(dark) {
   document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
   const btn = document.getElementById('theme-toggle');
-  if (btn) btn.textContent = dark ? '☀ Light' : '☾ Dark';
+  if (btn) {
+    btn.textContent = dark ? '☀ Light' : '☾ Dark';
+    btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+  }
 }
 
 function initTheme() {
